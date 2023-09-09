@@ -11,7 +11,7 @@ import InputField from '../forms/InputField';
 import PasswordInput from '../forms/PasswordInput';
 import Image from "next/image"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
-import loginImg from '/public/loginImg.png'
+import loginImg from '@public/loginImg.png'
 
 
 const validationSchema = Yup.object({

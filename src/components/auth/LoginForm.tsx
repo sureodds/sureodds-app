@@ -11,7 +11,7 @@ import InputField from '../forms/InputField';
 import PasswordInput from '../forms/PasswordInput';
 import Image from "next/image"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
-import loginImg from '/public/loginImg.png'
+import loginImg from '@public/loginImg.png'
 
 
 const validationSchema = Yup.object({
@@ -36,7 +36,7 @@ const LoginForm = () => {
       <div className='w-96 bg-red-800 rounded-l-xl sm:block hidden'>
         {/* <h1 className='text-3xl text-zinc-100 font-bold'>Success starts here</h1> */}
         <AspectRatio ratio={16 / 9}>
-            <Image src={loginImg} alt="Imge" width="100" height="100" className="rounded-xl object-cover" />
+            <Image src={loginImg} alt="Imge"className="rounded-xl object-cover" />
         </AspectRatio>
       </div>
       <div className='form w-96 p-8'>
