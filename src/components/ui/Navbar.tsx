@@ -5,13 +5,14 @@ import { Button } from './button';
 import { ModeToggle } from '../ModeToggle';
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link';
 
 const navigation = [
   { name: 'Home', href: '#', current: true },
   { name: 'How it works', href: '#', current: false },
   { name: 'Leader Board', href: '#', current: false },
   { name: 'About us', href: '#', current: false },
-  { name: 'Login', href: '#', current: false },
+  { name: 'Login', href: '/login', current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -56,8 +57,8 @@ export default function Navbar() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center">
-            <Button className="mr-4">
-              Create Account <span aria-hidden="true">&rarr;</span>
+            <Button className="mr-4" asChild>
+              <Link href="/join">Create Account <span aria-hidden="true">&rarr;</span></Link>
             </Button>
             <ModeToggle />
           </div>
