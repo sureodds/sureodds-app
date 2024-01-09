@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import iconImg from "/public/icon _Bet9ja_.png";
 import teamImg from "/public/icon _Manchester United_.png";

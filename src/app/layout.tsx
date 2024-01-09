@@ -22,10 +22,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
+
+  const toggle = false
 
   const handleToggle = () => {
-    setToggle(!toggle);
+    // const  !toggle;
   };
 
   return (

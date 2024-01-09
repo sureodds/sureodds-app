@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import counterSlice from "./features/counterSlice";
 import { userApi } from "./services/userApi";
+import toggleSlice from "./features/toggleSlice";
 
 export const store = configureStore({
   reducer: {
     counter: counterSlice,
+    toggle: toggleSlice,
     [userApi.reducerPath]: userApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>

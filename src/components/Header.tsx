@@ -9,6 +9,7 @@ import { Button } from "./ui/button";
 const Header = ({ onClick }: any) => {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
+  // const { handleOpen } = use;
 
   // After mounting, we have access to the theme
   useEffect(() => setMounted(true), []);
