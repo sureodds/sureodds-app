@@ -2,14 +2,36 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-zona)"],
+      },
+      colors: {
+        primary: "#10131e",
+        secondary: "#1a1e2d",
+        main: "#0888d2",
+        linearMain: "rgba(8,136,210,0.30015756302521013) 85%",
+        grey: "#f3f4f6",
+        white: "#ffff",
+        darkGray: "#9ca3af",
+      },
+      container: {
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "3rem",
+          xl: "3rem",
+          "2xl": "3rem",
+        },
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [require("@tailwindcss/forms")],
+};
 export default config
