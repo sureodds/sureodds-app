@@ -1,5 +1,5 @@
-"use client";
-import { useState } from "react";
+// "use client";
+// import { useState } from "react";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
