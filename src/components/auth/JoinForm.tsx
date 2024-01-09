@@ -32,7 +32,7 @@ const JoinForm = () => {
         console.log(values)
     };
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 w-auto bg-zinc-50 h-4/5 rounded-xl mt-20">
+    <div className="grid grid-cols-1 sm:grid-cols-2 w-auto bg-zinc-50 h-auto rounded-xl">
       <div className='w-96 bg-red-800 rounded-l-xl sm:block hidden'>
         {/* <h1 className='text-3xl text-zinc-100 font-bold'>Success starts here</h1> */}
         {/* <AspectRatio ratio={16 / 9}>
@@ -41,7 +41,7 @@ const JoinForm = () => {
       </div>
       <div className='form w-96 p-8'>
         <h1 className='font-bold text-xl mb-1'>Create a new account</h1>
-        <p className="text-sm mb-6">Already have an account? <Link href="/login" className="underline underline-offset-2">Sign in</Link></p>
+        <p className="text-sm mb-6">Already have an account? <Link href="/" className="underline underline-offset-2">Sign in</Link></p>
         {continueWithEmail && <Button className='mb-8' onClick={() => setContiuneWithEmail(false)} variant="outline">Go back</Button>}
         {!continueWithEmail ? <div>
             <Button variant="outline" className="px-8 w-full mt-8 py-6 flex items-center justify-around"><FcGoogle className="h-6 w-6" /> <span className='font-medium text-md dark:text-zinc-200'>Continue with Google</span></Button>
