@@ -35,13 +35,13 @@ const Header = ({ onClick }: any) => {
         <Button
           asChild
           className="dark:bg-white bg-main hover:bg-main/70 dark:hover:bg-main/70 dark:text-main font-bold hover:px-6 transition-all">
-          <Link href="/account/add">Register</Link>
+          <Link href="/account/register">Register</Link>
         </Button>
         <Button
           asChild
           variant="ghost"
           className=" font-bold hover:px-6 transition-all dark:text-gray-100">
-          <Link href="/account/add">Login</Link>
+          <Link href="/login">Login</Link>
         </Button>
 
         <button

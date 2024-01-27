@@ -62,6 +62,8 @@ const ForecastCard = () => {
         <hr className="divided-y dark:border-gray-600" />
         <MdLockOutline className="absolute text-xl top-[-0.7rem] text-gray-600 dark:text-gray-200 right-[46%] " />
       </div>
+
+      {/* Card Body */}
       <div className="card-body p-6">
         <div className="flex items-center justify-between">
           <div className="text-center">
@@ -102,7 +104,7 @@ const ForecastCard = () => {
             <p className="text-xs mt-2 dark:text-gray-100">Man Utd</p>
           </div>
         </div>
-        <div className="mb-4 mx-auto">
+        <div className="mx-auto">
           {isOpen && (
             <div className="flex items-center justify-between">
               <div className="text-center">
@@ -140,6 +142,8 @@ const ForecastCard = () => {
           )}
         </div>
       </div>
+      
+      {/* Card footer */}
       <div className="card-footer flex items-center justify-between bg-gray-100 dark:bg-gray-700 p-2">
         <div className="likes">
           <button className="bg-white dark:bg-gray-600 flex items-center p-2 rounded-lg">

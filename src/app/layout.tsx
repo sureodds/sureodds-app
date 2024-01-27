@@ -1,14 +1,9 @@
-// "use client";
-// import { useState } from "react";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@components/theme-provider";
-import Navbar from "@/components/ui/Navbar";
 import { Providers } from "@/redux/providers";
-import Sidenav from "@/components/Sidenav";
-import MobileSidenav from "@/components/Mobilenav";
-import Header from "@/components/Header";
+import Layout from "@/components/Layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,28 +17,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // const [toggle, setToggle] = useState(false);
-
-  const toggle = false
-
-  const handleToggle = () => {
-    // const  !toggle;
-  };
-
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <Providers>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-            {/* <Navbar /> */}
-            <section className="flex sm:h-screen h-full w-full overflow-hidden">
-              <Sidenav />
-              <MobileSidenav toggle={toggle} handleToggle={handleToggle} />
-              <main className="w-screen relative bg-gray-100 dark:bg-primary overflow-y-auto">
-                <Header onClick={handleToggle} />
-                {children}
-              </main>
-            </section>
+            <Layout>{children}</Layout>
           </ThemeProvider>
         </Providers>
       </body>
